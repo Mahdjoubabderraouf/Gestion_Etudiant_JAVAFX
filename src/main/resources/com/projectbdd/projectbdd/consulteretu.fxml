@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectbdd.projectbdd.ConsulterEtuCtrl">
+   <children>
+      <ImageView fitHeight="102.0" fitWidth="99.0" layoutX="501.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@groupe.png" />
+         </image>
+      </ImageView>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="1100.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="376.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="348.0" style="-fx-background-color: lightblue;" text="Consultation de l'étudiant concerné" AnchorPane.leftAnchor="376.0">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="55.0" layoutX="955.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@student.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1010.0" layoutY="6.0" prefHeight="55.0" prefWidth="99.0" text="ETUDIANT">
+               <font>
+                  <Font name="Dhurjati" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="retour" fitHeight="39.0" fitWidth="43.0" layoutX="20.0" layoutY="14.0" onMouseClicked="#retourner" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@retour.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TblEtu" layoutX="112.0" layoutY="182.0" prefHeight="121.0" prefWidth="877.0">
+         <columns>
+            <TableColumn fx:id="colmatetu" editable="false" prefWidth="75.0" sortable="false" text="Matricule" />
+            <TableColumn fx:id="colnometu" editable="false" prefWidth="75.0" sortable="false" text="Nom" />
+            <TableColumn fx:id="colprenometu" editable="false" prefWidth="75.0" sortable="false" text="Prénom" />
+            <TableColumn fx:id="coldate" editable="false" prefWidth="75.0" sortable="false" text="Date" />
+            <TableColumn fx:id="coladr" editable="false" prefWidth="171.0" sortable="false" text="Adresse" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="matinfo" layoutX="389.0" layoutY="377.0" prefHeight="39.0" prefWidth="301.0" promptText="Matricule" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="23.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="412.0" layoutY="338.0" prefHeight="39.0" prefWidth="256.0" text="Matricule de l'étudiant concerné ">
+         <font>
+            <Font name="Dyuthi Regular" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="474.0" layoutY="453.0" mnemonicParsing="false" onAction="#chercheretu" prefHeight="55.0" prefWidth="152.0" style="-fx-background-color: lightgrey; -fx-background-radius: 10;" text="Chercher">
+         <font>
+            <Font name="Kalimati" size="23.0" />
+         </font>
+      </Button>
+      <Label fx:id="msgerror" alignment="CENTER" layoutX="327.0" layoutY="422.0" prefHeight="32.0" prefWidth="426.0" textFill="#d01a1a">
+         <font>
+            <Font name="Dhurjati" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

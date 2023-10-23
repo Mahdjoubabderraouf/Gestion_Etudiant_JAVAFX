@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectbdd.projectbdd.BddController">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="1100.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="383.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="334.0" style="-fx-background-color: lightblue;" text="Bievenue dans la base de données" AnchorPane.leftAnchor="383.0">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="55.0" layoutX="955.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@administrator.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1010.0" layoutY="6.0" prefHeight="55.0" prefWidth="99.0" text="ADMIN">
+               <font>
+                  <Font name="Dhurjati" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="disconnect" layoutX="978.0" layoutY="66.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#deconnection" prefHeight="22.0" prefWidth="108.0" style="-fx-background-color: lightblue;" text="Se déconnecter">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="157.0" fitWidth="158.0" layoutX="472.0" layoutY="186.0" onMouseClicked="#optionpaneletu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@student.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="TOP_CENTER" layoutX="471.0" layoutY="343.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="19.0" prefWidth="158.0" text="Étudiant">
+         <font>
+            <Font name="Dyuthi Regular" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="163.0" fitWidth="157.0" layoutX="115.0" layoutY="186.0" onMouseClicked="#optionpanelens" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coach.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="TOP_CENTER" layoutX="115.0" layoutY="343.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="19.0" prefWidth="158.0" text="Enseignant">
+         <font>
+            <Font name="Dyuthi Regular" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="consult1" fitHeight="157.0" fitWidth="158.0" layoutX="821.0" layoutY="186.0" onMouseClicked="#optionpanelrqt" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@query.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="TOP_CENTER" layoutX="821.0" layoutY="343.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="19.0" prefWidth="158.0" text="Requettes">
+         <font>
+            <Font name="Dyuthi Regular" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

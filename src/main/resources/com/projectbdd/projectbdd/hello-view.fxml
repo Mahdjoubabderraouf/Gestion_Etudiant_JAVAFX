@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="905.0" style="-fx-background-color: #ededed;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectbdd.projectbdd.HelloController">
+   <children>
+      <BorderPane prefHeight="588.0" prefWidth="906.0">
+         <right>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <Pane prefHeight="200.0" prefWidth="906.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="209.0" layoutY="-182.0" prefHeight="382.0" prefWidth="477.0" style="-fx-background-color: #f1f1f1;">
+                     <children>
+                        <Label layoutX="71.0" layoutY="46.0" prefHeight="32.0" prefWidth="229.0" text="Nom de l'utilisateur">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="71.0" layoutY="139.0" prefHeight="32.0" prefWidth="205.0" text="Mot de passe" textFill="#2d2d37">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="utilisateur" layoutX="71.0" layoutY="85.0" prefHeight="45.0" prefWidth="335.0" style="-fx-background-color: #dddddd; -fx-background-radius: 40; -fx-border-color: #ededed;">
+                           <font>
+                              <Font size="19.0" />
+                           </font></TextField>
+                        <PasswordField fx:id="mdp" layoutX="71.0" layoutY="179.0" prefHeight="45.0" prefWidth="335.0" style="-fx-background-color: #dddddd; -fx-border-color: #ededed; -fx-background-radius: 40;">
+                           <font>
+                              <Font size="19.0" />
+                           </font></PasswordField>
+                        <Button layoutX="105.0" layoutY="269.0" mnemonicParsing="false" onAction="#SeConnecter" prefHeight="50.0" prefWidth="257.0" style="-fx-background-color: lightblue; -fx-background-radius: 40;" text="Connecter" textFill="#1f1e1f">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="msgcnx" alignment="CENTER" layoutX="67.0" layoutY="232.0" prefHeight="30.0" prefWidth="343.0" textFill="#d31818" />
+                     </children>
+                  </Pane>
+               </children></Pane>
+         </bottom>
+         <left>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+      <Pane prefHeight="208.0" prefWidth="905.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label alignment="CENTER" layoutX="182.0" layoutY="147.0" prefHeight="47.0" prefWidth="533.0" styleClass="box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4)" text="Connexion">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Pane layoutX="-9.0" layoutY="-1.0" prefHeight="142.0" prefWidth="915.0" style="-fx-background-color: #1f1e1f;">
+               <children>
+                  <Label layoutX="274.0" layoutY="36.0" prefHeight="70.0" prefWidth="368.0" text="Scholar Campus" textFill="#f0f0f5">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

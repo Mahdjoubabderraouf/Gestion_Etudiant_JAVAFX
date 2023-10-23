@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectbdd.projectbdd.AdminConsulterEtuCtrl">
+   <children>
+      <ImageView fitHeight="102.0" fitWidth="99.0" layoutX="501.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@groupe.png" />
+         </image>
+      </ImageView>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="1100.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="371.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="358.0" style="-fx-background-color: lightblue;" text="Consultation de la liste des étudiants" AnchorPane.leftAnchor="371.0">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="55.0" layoutX="955.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@administrator.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1010.0" layoutY="6.0" prefHeight="55.0" prefWidth="99.0" text="ADMIN">
+               <font>
+                  <Font name="Dhurjati" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="43.0" layoutX="20.0" layoutY="14.0" onMouseClicked="#retourner" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@retour.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TblEtu" layoutX="112.0" layoutY="160.0" prefHeight="347.0" prefWidth="877.0">
+         <columns>
+            <TableColumn fx:id="colmatetu" editable="false" prefWidth="159.0" sortable="false" text="Matricule" />
+            <TableColumn fx:id="colnometu" editable="false" prefWidth="176.0" sortable="false" text="Nom" />
+            <TableColumn fx:id="colprenometu" editable="false" prefWidth="193.0" sortable="false" text="Prénom" />
+            <TableColumn fx:id="coldate" editable="false" prefWidth="128.0" sortable="false" text="Date" />
+            <TableColumn fx:id="coladr" editable="false" prefWidth="218.0" sortable="false" text="Adresse" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
